@@ -23,7 +23,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <nav className="fixed top-0 w-full z-50 transition-all duration-300" 
            style={{ 
-             backgroundColor: scrollY > 50 ? 'rgba(26, 31, 44, 0.95)' : 'transparent',
+             backgroundColor: scrollY > 50 ? 'rgba(255, 240, 245, 0.95)' : 'transparent',
              backdropFilter: scrollY > 50 ? 'blur(10px)' : 'none'
            }}>
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -46,7 +46,16 @@ const Index = () => {
       </nav>
 
       <section id="главная" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-secondary/20"></div>
+        <div 
+          className="absolute inset-0" 
+          style={{
+            backgroundImage: 'url(https://cdn.poehali.dev/files/e2693b27-61f2-4dc5-935b-0870b280378c.jpeg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-background/40"></div>
         <div className="container mx-auto px-6 z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
